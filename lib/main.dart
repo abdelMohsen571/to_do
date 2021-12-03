@@ -21,7 +21,13 @@ class MyApp extends StatelessWidget {
               primaryVariant: Colors.white,
               secondaryVariant: Color(0xFF61E757),
             ),
+        textTheme: TextTheme(
+            headline1: TextStyle(
+                color: Color(0xFF060E1E),
+                fontSize: 24,
+                fontWeight: FontWeight.bold)),
       ),
+
       darkTheme: ThemeData(
         scaffoldBackgroundColor: Color(0xFF060E1E),
         primaryColor: Color(0xff5D9CEC),
@@ -30,7 +36,14 @@ class MyApp extends StatelessWidget {
               primaryVariant: Color(0xFF060E1E),
               secondaryVariant: Color(0xFF61E757),
             ),
+        textTheme: TextTheme(
+            headline1: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+                fontWeight: FontWeight.bold)),
       ),
+
+      themeMode: ThemeMode.light,
       home: HomeScreen(),
       // routes: {HomeScreen.routeName: (buildContext) => HomeScreen()},
       // initialRoute: HomeScreen.routeName,
